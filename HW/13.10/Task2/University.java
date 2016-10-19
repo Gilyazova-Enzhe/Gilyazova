@@ -1,22 +1,24 @@
-class University{
-	String name;
-	String surname;
-	String city;
-	
-	University(){}
-	
-	University (String name, String surname, String city){
-		this.name=name;
-		this.surname=surname;
-		this.city=city;
-	}
-	String  getCity() {
-	return city;
+class University {
+    String name;
+    String city;
+
+    University() {
     }
-	void setCity(String city) {
+
+    University(String name, String city) {
+        this.name = name;
         this.city = city;
     }
-	String getName() {
+
+    String getCity() {
+        return city;
+    }
+
+    void setCity(String city) {
+        this.city = city;
+    }
+
+    String getName() {
         return name;
     }
 

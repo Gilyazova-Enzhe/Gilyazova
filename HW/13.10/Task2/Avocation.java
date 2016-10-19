@@ -1,50 +1,48 @@
 class Avocation {
-	String name;
-	String grade;
-	int prize;
-	boolean chempion;
-	
-	Avocation(){}
-	
-	Avocation(String name, String grade, int prize,boolean chempion){
-		this.name = name;
+    String name;
+    String grade;
+    int prize;
+    boolean chempion;
+
+    Avocation() {
+    }
+
+    Avocation(String name, String grade, int prize, boolean chempion) {
+        this.name = name;
         this.grade = grade;
-		this.prize = prize;
-		this.chempion = chempion;	
-		}
-		String getName() {
-		return name;
-	  }
+        this.prize = prize;
+        this.chempion = chempion;
+    }
 
-	    void setName(String name) {
-		this.name = name;
-	  }
+    String getName() {
+        return name;
+    }
 
-	   String getGrade() {
-		return grade;
-	  }
+    public boolean isChempion() {
+        return chempion;
+    }
 
-	   void setGrade(String grade) {
-		this.grade = grade;
-	  }
+    void setName(String name) {
+        this.name = name;
+    }
 
-	   int getPrize() {
-		return prize;
-	  }
+    String getGrade() {
+        return grade;
+    }
 
-	   void setPrize(int prize) {
-		this.prize = prize;
-	  }
+    void setGrade(String grade) {
+        this.grade = grade;
+    }
 
-	   String isChempion() {
-		if (this.chempion){
-			return getName() + " chempion";
-		}else{
-			return getName() + " not chempion";
-		}
-	  }
+    int getPrize() {
+        return prize;
+    }
 
-	  void setChempion(boolean chempion) {
-		this.chempion = chempion;
-	  }
-	}
+    void setPrize(int prize) {
+        this.prize = prize;
+    }
+
+    void setChempion(boolean chempion) {
+        this.chempion = chempion;
+    }
+}
