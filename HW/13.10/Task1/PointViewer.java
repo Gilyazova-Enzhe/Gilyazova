@@ -9,4 +9,4 @@ public class PointViewer {
 	DistanceCalculator dc = new DistanceCalculator();
 	System.out.println ("Distance is " + dc.calculate(point));
 	}
-	}
+}
