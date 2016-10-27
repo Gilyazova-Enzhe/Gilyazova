@@ -2,7 +2,7 @@ class ModernBed extends Bed {
 	private int wooden;
 	private boolean box;
 	
-	ModernBed (String modelName,int hardness, boolean frame, int wooden, boolean box){
+	ModernBed (String modelName,int hardness, int iron, boolean frame, int wooden, boolean box){
 		super (modelName, iron, hardness, frame);
 		this.wooden=wooden;
 		this.box=box;	
