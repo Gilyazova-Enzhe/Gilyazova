@@ -1,35 +1,29 @@
-public class Task4 {
-	
+class Task4 {
     public static void main(String[] args) {
 
-        String a = args[0];
-        String b = args[1];
-		
-        char[] a1 = first.toCharArray();
-        char[] b1 = second.toCharArray();
-        String result = "";
+        String first = args[0];
+        String second = args[1];
+        char[] fArr = first.toCharArray();
+        char[] sArr = second.toCharArray();
+        String res = "";
 
-        
-		if (a.length() == 0 || b.length() == 0) {
+        if (first.length() == 0 || second.length() == 0) { //длина больше нуля
             System.out.print("String length must be greater than zero");
             System.exit(0);
         }
 
-        
-		if (a.length() != b.length()) {
-            System.out.print("String is different");
-            System.exit(0);
-        }
-
-       
-	   for (int i = 0; i < a.length(); i++) {
-            
-			if (a1[i] < b1[i] || a1[i] > b1[i]) {
-                result = "String is different";
+        for (int i = 0; i < Math.min(first.length(), second.length());i++) {// иещт какая из строк с мин длиной 
+            if (fArr[i] < sArr[i]) {
+                res = first + "\n" + second;
                 break;
+            }
+            else if (fArr[i] > sArr[i]) {
+                res = second + "\n" + first; 
+                break;
+            }
         }
-        if (result.length() > 0) System.out.print(result);
-        else System.out.print("String is same");
+        if (res.length() > 0) System.out.print(res); 
+        else if (first.length() > second.length()) System.out.print(second + "\n" + first);
+        else System.out.print(first + "\n" + second);
     }
-}
 }

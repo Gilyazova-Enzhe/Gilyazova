@@ -13,11 +13,11 @@ public class Diary {
 				case "add event": 
 					event = sc.nextLine();
 					date = sc.nextLine();
-					listEvent.add(new Event(event, date));
+					listEvent.add(new Event(event, date)); //создаём объект и передаём данные в конструкор 
 					break;
 				case "print list": 
 					for (int i = 0; i < listEvent.size(); i++) {
-						Event eventObj = listEvent.get(i); 
+						Event eventObj = listEvent.get(i); //получаем объект из листа 
 						System.out.println(eventObj.toString());
 					}
 			}

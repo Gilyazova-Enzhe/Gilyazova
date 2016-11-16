@@ -9,7 +9,7 @@ class Task13 {
 
             for (int y = 0; y <= 2 * r; y++){
 
-                if ((x - r) * (x - r) + (y - r) * (y - r) < r * r) {
+                if ((x - r) * (x - r) + (y - r) * (y - r) < r * r/3 ) {
 
                     System.out.print("**");
 

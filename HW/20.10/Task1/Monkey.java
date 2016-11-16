@@ -27,15 +27,15 @@ class Monkey {
         return growth;
     }
 
-    void eatBanana() {
+    public void eatBanana() {
         eatBanana = true;
     }
 
-    void goSleep() {
+    public void goSleep() {
         sleep = true;
     }
 
-    void wakeUp() {
+    public void wakeUp() {
         sleep = false;
     }
 

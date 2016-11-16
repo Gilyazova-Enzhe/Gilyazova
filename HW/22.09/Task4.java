@@ -4,8 +4,11 @@ public class Task4 {
 		int a2=Integer.parseInt(args[1]);
 		int a3=Integer.parseInt(args[2]);
 		int diff=a2-a1;
-		int k = 1;
 		
-		System.out.println(a1+diff*(a3-1));
-	}
+		if ( a3 >= 1) {
+			int an = a1 + (a3 -1) * diff;
+
+			System.out.println(an);
+		}
+	}	
 }
