@@ -4,7 +4,6 @@ class Task3 {
 		double sum = 0;
 		double fact1 = 1;
 		double fact2 = 1;
-
 		if ( n < 1) {
 			System.out.print("Number must be > or = 1");
 		} else {
@@ -12,22 +11,16 @@ class Task3 {
 				for ( int i = 1; i <= m-1; i++) {
 					fact1 *= i;
 				}
-				
 			    for ( int j = 1; j <= 2 * m; j++) {
 					fact2 *= j;
 				}
-
+				
 				sum += (fact1*fact1)/fact2;
-
+				
 				fact1 = 1;
 				fact2 = 1;
-
 			}
-
 		}
-
 		System.out.print("Sum " + n + " element " + sum);
-		
 	}
-
 }
